@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.ArrayList;
+
+public class Main {
+
+    //5 Write a program to copy one array list into another.
+
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<>();
+        colors.add("Yellow");
+        colors.add("Black");
+        colors.add("Blue");
+        colors.add("Red");
+        colors.add("Green");
+        ArrayList<String> paint = new ArrayList<>();
+        paint.addAll(colors);
+
+        //ArrayList<String> paint = new ArrayList<>(colors); // Second method
+
+    }
+}

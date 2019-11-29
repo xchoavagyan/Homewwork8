@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.ArrayList;
+
+public class Main {
+
+    //9 Write a program to remove  all even numbers from array list.
+
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(10);
+        numbers.add(15);
+        numbers.add(20);
+        numbers.add(11);
+        numbers.add(0);
+        for (int i = 0; i < numbers.size(); i++) {
+            if (numbers.get(i) % 2 == 0) {
+                numbers.remove(i);
+            }
+        }
+    }
+}
