@@ -1,0 +1,30 @@
+package com.company;
+
+import java.util.ArrayList;
+
+public class Main {
+
+    //  13 Design a  Hospital program
+    //  Hospital has a name
+    //	Hospital has a Director
+    //	Hospital has Doctors
+    //	Hospital has Patients
+
+    public static void main(String[] args) {
+        Doctor doctor1 = new Doctor();
+        doctor1.setName("Gevorg Vardanyan");
+        doctor1.setSpecialty("surgeon");
+        ArrayList<Doctor> doctors = new ArrayList<>();
+        doctors.add(doctor1);
+        Patient patient1 = new Patient();
+        patient1.setName("Khachatur Avagyan");
+        patient1.setDisease("spine");
+        ArrayList<Patient> patients = new ArrayList<>();
+        patients.add(patient1);
+        Hospital hospital1 = new Hospital();
+        hospital1.setName("Kanaz Hospital");
+        hospital1.setDirectorName("Mher Serobyan");
+        hospital1.setDoctors(doctors);
+        hospital1.setPatients(patients);
+        }
+}

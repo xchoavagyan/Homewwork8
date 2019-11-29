@@ -1,0 +1,38 @@
+package com.company;
+
+import java.util.ArrayList;
+
+public class Main {
+
+    //12 Write a program to create a new array list<Animal>,
+    //add  4 cats and 2 dogs to that collection and print out the collection (names of animals in that collection).
+
+    public static void main(String[] args) {
+        Cat firstCat = new Cat();
+        firstCat.setName("Ramsi");
+        Cat secondCat = new Cat();
+        secondCat.setName("Archi");
+        Cat thirdCat = new Cat();
+        thirdCat.setName("Mursik");
+        Cat fourthCat = new Cat();
+        fourthCat.setName("Barsik");
+        ArrayList<Cat> cats = new ArrayList<>();
+        cats.add(firstCat);
+        cats.add(secondCat);
+        cats.add(thirdCat);
+        cats.add(fourthCat);
+        Dog firstDog = new Dog();
+        firstDog.setName("Roni");
+        Dog secondDog = new Dog();
+        secondDog.setName("Deni");
+        ArrayList<Dog> dogs = new ArrayList<>();
+        dogs.add(firstDog);
+        dogs.add(secondDog);
+        ArrayList<Animal> animals = new ArrayList<>();
+        animals.addAll(dogs);
+        animals.addAll(cats);
+        for (int i = 0; i < animals.size(); i++) {
+            System.out.println(animals.get(i).getName());
+        }
+    }
+}

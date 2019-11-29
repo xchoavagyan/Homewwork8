@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.ArrayList;
+
+public class Main {
+
+    //11 Write a program to create a new array list<Cat>,
+    //add some cats (extends Animal) (Cat) and print out the collection (names of cats).
+
+    public static void main(String[] args) {
+        Cat firstCat = new Cat();
+        firstCat.setName("Ramsi");
+        Cat secondCat = new Cat();
+        secondCat.setName("Archi");
+        ArrayList<Cat> cats = new ArrayList<>();
+        cats.add(firstCat);
+        cats.add(secondCat);
+        for (int i = 0; i < cats.size() ; i++) {
+            System.out.println(cats.get(i).getName());
+        }
+    }
+}
